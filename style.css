@@ -67,12 +67,25 @@ main {
 .main-nav > img {
   height: 120px;
 }
+/*Flex række med mellemrum*/
+.main-nav nav {
+  display: flex;
+  gap: 20px;
+}
+
 /* Layoutet for links i navigationen */
 .main-nav nav a {
-  margin: 0 1rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.6rem;
+  background: #f4f1ee;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-weight: 500;
+  color: #5b4636;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s ease, transform 0.1s ease;
 }
 .main-nav nav a:hover {
   text-decoration: underline;
@@ -235,4 +248,3 @@ main {
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
-
