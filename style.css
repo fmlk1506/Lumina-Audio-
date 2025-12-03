@@ -136,3 +136,24 @@ main {
   text-align: center;
   margin-bottom: 2rem;
 }
+
+/* Grid med produkter produkterne */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+/* Hvert enkel produktkort */
+.product-card {
+  background: rgba(218, 218, 218, 0.332);
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+}
+/* Produktbilleder i kortene */
+.product-card img {
+  max-width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
