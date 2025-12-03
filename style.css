@@ -157,3 +157,28 @@ main {
   display: block;
 }
 
+/* Instagram opslagene */
+.instagram-gallery {
+  margin: 3rem 0;
+}
+/* Alle billeder i en række */
+.image-row {
+  display: flex;
+  gap: 32px;
+}
+
+/* Billedeboks - med instagrambillederne og overlay */
+.insta-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  flex: 1;
+}
+/* Instagram billedet */
+.insta-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.3s ease;
+  border-radius: 15px;
+}
