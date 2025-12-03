@@ -210,3 +210,9 @@ main {
 .insta-box:hover .overlay {
   opacity: 1;
 }
+
+/* Nyheds sektion */
+.new-release {
+  margin-top: 5rem;
+  text-align: center;
+}
