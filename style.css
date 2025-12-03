@@ -87,3 +87,27 @@ main {
   margin-left: 20px;
   cursor: pointer;
 }
+
+/* Hero sektion */
+.hero {
+  margin: 1rem 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background-image: url("images/Hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+/* Call to action knappen */
+.cta-button {
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  padding: 1rem 2rem;
+  background: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+}
