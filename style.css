@@ -126,3 +126,13 @@ main {
   padding: 1.5rem;
   border-radius: 16px;
 }
+
+/* Produkt sektion */
+.colors {
+  margin-bottom: 5rem;
+}
+/* Overskrift til produkt-farver */
+.colors h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
