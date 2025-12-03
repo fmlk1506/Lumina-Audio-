@@ -111,3 +111,18 @@ main {
   font-size: 1rem;
   cursor: pointer;
 }
+
+/* Informations bokse under hero billedet */
+.features {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+/* Hver enkelt informations boks */
+.feature-card {
+  background: rgba(218, 218, 218, 0.332);
+  padding: 1.5rem;
+  border-radius: 16px;
+}
