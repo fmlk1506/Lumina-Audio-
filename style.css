@@ -216,3 +216,9 @@ main {
   margin-top: 5rem;
   text-align: center;
 }
+/* Billederne i nyhedssektionen er centreret og i 2 kolonner */
+.new-release .product-grid {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
