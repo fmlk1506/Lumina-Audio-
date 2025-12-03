@@ -36,19 +36,18 @@ main {
 
 /* Venstre side af topbaren med ikoner*/
 .topbar-left {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 20px;
 }
 
 /*Højre side af topbaren står centreret */
-.topbar-right
-    {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    }
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
 /* Ikoner i topbaren */
 .topbar img {
@@ -211,37 +210,50 @@ main {
   flex: 1;
 }
 /* Instagram billedet */
-.insta-box img {
+.insta-box > img {
   width: 100%;
   height: auto;
   display: block;
   transition: 0.3s ease;
   border-radius: 15px;
 }
-/* Overlayet der kommer frem når når musen hover */
+/* Overlayet der kommer frem når musen hover */
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f4f1ee;
+  background-color: rgba(244, 241, 238, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 0; /* skjult fra start */
   transition: 0.3s ease;
   border-radius: 15px;
+  z-index: 10;
 }
+
 /* Instagram-logoet i overlayet */
-.icon {
-  width: 70px;
-  opacity: 0.9;
+.overlay .icon {
+  width: 60px;
+  height: auto;
+  position: relative;
+  z-index: 20; /* ligger ovenpå overlayet */
+  opacity: 0; /* skjult fra start */
+  transition: 0.3s ease;
 }
-/* Billedet bliver mørkere når musen hover */
-.insta-box:hover img {
+
+/* Logoet bliver synligt når musen hover */
+.insta-box:hover .icon {
+  opacity: 1;
+}
+
+/* KUN det store billede bliver mørkere på hover */
+.insta-box:hover > img {
   filter: brightness(70%);
 }
+
 /* Overlayet bliver synligt når musen hover */
 .insta-box:hover .overlay {
   opacity: 1;
