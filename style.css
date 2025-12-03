@@ -222,3 +222,10 @@ main {
   max-width: 600px;
   margin: 2rem auto 0;
 }
+
+/* Footer */
+.site-footer {
+  background: rgba(183, 183, 183, 0.332);
+  padding: 2rem 3rem;
+  margin-top: 3rem;
+}
