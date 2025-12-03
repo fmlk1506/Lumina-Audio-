@@ -50,3 +50,40 @@ main {
   margin-right: 20px;
   font-size: 0.9rem;
 }
+
+/* Navigation / Header - logo, menupunkter og ikoner */
+.site-header {
+  background-color: white;
+  color: #3b3127;
+}
+/* Layoutet for navigationen, gør at alt står på linje */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+/* Størrelse på logo i navigationen */
+.main-nav > img {
+  height: 120px;
+}
+/* Layoutet for links i navigationen */
+.main-nav nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+.main-nav nav a:hover {
+  text-decoration: underline;
+}
+/* Ikoner til højre i navigationen */
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+.nav-icons img {
+  height: 22px;
+  margin-left: 20px;
+  cursor: pointer;
+}
