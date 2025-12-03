@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Basis styling for hele siden */
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #ffffff;
+  color: #3b3127;
+}
+/* Holder hele hjemmesiden centeret og med maks bredde */
+.page-wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* Giver luft rundt om main delen */
+main {
+  flex: 1;
+  padding: 0 3rem 3rem;
+}
+
+/* Den brune topbar - den øverste del */
+.topbar {
+  background-color: #5b4636;
+  color: white;
+  padding: 6px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Venstre og højre side i topbaren står på linje */
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: center;
+}
+/* Ikoner i topbaren */
+.topbar img {
+  height: 18px;
+  margin-right: 12px;
+}
+
+/* Teksten i højre side af topbaren */
+.topbar-right span {
+  margin-right: 20px;
+  font-size: 0.9rem;
+}
