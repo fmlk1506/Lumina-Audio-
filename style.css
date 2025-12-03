@@ -229,3 +229,9 @@ main {
   padding: 2rem 3rem;
   margin-top: 3rem;
 }
+/* Footer opdelt i 4 kolonner */
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
