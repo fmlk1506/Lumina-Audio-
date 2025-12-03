@@ -90,6 +90,19 @@ main {
 .main-nav nav a:hover {
   text-decoration: underline;
 }
+
+/*Alle menupunkterne har pil ned*/
+.main-nav nav a::after {
+  content: " ▼";
+  font-size: 0.9rem;
+  margin-left: 6px;
+}
+
+/* Fjerner pilen ved om os og support */
+.main-nav nav a.no-arrow::after {
+  content: "";
+}
+
 /* Ikoner til højre i navigationen */
 .nav-icons {
   display: flex;
