@@ -1,1 +1,2 @@
-/*document.body.innerHTML += "Hello Javscript";*/
+console.log("Lumina Audio website fungerer!");
+
